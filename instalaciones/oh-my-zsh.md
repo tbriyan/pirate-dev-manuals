@@ -69,3 +69,24 @@ Oh My Zsh es un potente framework de código abierto para la terminal Zsh (Z she
 Ahora deberías estar utilizando Oh My Zsh como tu shell predeterminada, con una amplia gama de características que mejorarán tu flujo de trabajo en la terminal.
 
 Recuerda que Oh My Zsh es altamente personalizable, permitiendo que ajustes su configuración según tus necesidades y preferencias.
+
+### Integración con VSC y solución a errores de fuentes en terminal.
+
+En ocasiones la terminal no reconoce los iconos de integración de `Oh My Zsh`. Para solucionar el problema, realizamos lo siguiente:
+
+```bash
+sudo apt install fonts-powerline
+```
+
+Eso debería resolver el problema de la terminal. Con el editor de código VSC se tiene un problema similar, para ello nos dirigimos a `Administración` > `Configuración` > `fonts`, específicamente en su archivo JSON. Modificamos lo siguiente:
+
+```bash
+{
+   ...
+   .
+   "terminal.integrated.fontFamily": "monospace, PowerlineSymbols"
+   .
+   ...
+}
+```
+
