@@ -50,6 +50,21 @@ Oh My Zsh es un potente framework de código abierto para la terminal Zsh (Z she
    ```bash
    source ~/.zshrc
    ```
+   - **Personalización :** Existen varios plugins que se pueden instalar, entre los más importantes tenemos a `zsh-autosuggestions` entre otros, a continuación se muestra una guía de instalación:
+
+   ```bash
+    # Clonamos el siguiente repositorio en la ruta ~/.oh-my-zsh/custom/plugins
+
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+    # Agregamos el plugin a ~/.zshrc
+
+    sudo nano ~/.zshrc
+
+    # ...
+
+    plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+    ```
 
 Ahora deberías estar utilizando Oh My Zsh como tu shell predeterminada, con una amplia gama de características que mejorarán tu flujo de trabajo en la terminal.
 
